@@ -1,0 +1,29 @@
+body, html {
+  display: block;
+  width: auto;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.typewriter h1 {
+  font-family: 'Special Elite', cursive;
+  overflow: hidden;
+  border-right: 0.2em solid;
+  white-space: nowrap;
+  animation:
+  typeEffect 5s steps(50),
+  cursorBlink 0.8s step-end infinite;
+}
+
+@keyframes typeEffect {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes cursorBlink {
+  from, to { border-color: transparent }
+  50% { border-color: green; }
+}
